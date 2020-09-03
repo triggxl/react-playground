@@ -1,0 +1,5 @@
+/* adding styles to split component */
+.split {
+  flex: 1;
+  padding: 1em;
+}

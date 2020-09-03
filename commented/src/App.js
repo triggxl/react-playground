@@ -5,8 +5,6 @@ import Tooltip from './composition/Tooltip';
 import Messages from './Messages';
 import TheDate from './state/TheDate';
 import Counter from './Counter';
-import HelloWorld from './state-drills/HelloWorld';
-import RouletteGun from './state-drills/RouletteGun';
 
 //"../"" to access from folder above/one folder up
 const FirstToolTip = props => (
@@ -23,8 +21,6 @@ const SecondToolTip = props => (
 function App() {
   return (
     <main className='App'>
-      <RouletteGun />
-      <HelloWorld />
       <TheDate />
       <Counter count={123}/>
       <AppNotification />
@@ -60,3 +56,27 @@ class AppNotification extends Component {
 
 export default App;
 
+/*
+export {
+  About,
+  Contact,
+}
+1. Create composition folder and Tooltip file 
+2. Add sections inside Tooltip with props
+3. Style Tooltip components
+4. Import CSS file into Tooltip && export to App.js
+5. Added color to Tooltips using inline styling
+Default Props:
+
+create component
+import component to use or export for use
+
+In this checkpoint we've created our first custom component, Split, that's used for dividing a page up into 
+sections. This gave us a good opportunity to practice with props.children and the import/export syntax. 
+We coordinated a custom CSS file and styles with our component, keeping a clear separation of concerns.
+mkdir --> new folder
+touch --> new file
+rm -r --> remove folder
+./ root directory
+
+*/
