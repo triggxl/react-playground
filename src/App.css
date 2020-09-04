@@ -1,6 +1,8 @@
 .App {
   /* achieving a 50% width style using flex*/
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: 40px;
   /* vh in % height of the viewport */
   min-height: calc(100vh - 80px);

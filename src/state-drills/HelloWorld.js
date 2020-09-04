@@ -8,21 +8,18 @@ class HelloWorld extends React.Component {
   }
   }
   greetingWho =()=> {
-    this.setState({greeting : 'Who'});
+    this.setState({greeting : 'Who!'});
   }
   greetingFriend =()=> {
-    this.setState({greeting : 'Friend'});
+    this.setState({greeting : 'Friend!'});
   }
   greetingReact =()=> {
-    this.setState({greeting: 'React'});
+    this.setState({greeting: 'React!'});
   }
   render() {
-    // const who = 'Who';
-    // const friend = 'Friend';
-    // const react = 'React';
-    // const [ who, friend, react ] = useState([]);
    return (
     <div>
+      <h3>Hello '______'!</h3>
       <p>Hello {this.state.greeting}</p>
       <button onClick={this.greetingWho}>Who</button>
       <button onClick={this.greetingFriend}>Friend</button>
