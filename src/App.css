@@ -8,6 +8,20 @@
   min-height: calc(100vh - 80px);
 }
 
+.Accordion {
+  background-color: #049c95;
+  font: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center; /*vertical*/
+  justify-content: center; /*vertical*/
+  min-height: 100vh;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 .left {
   background-color: darkslategray;
   color: azure;

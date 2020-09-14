@@ -23,12 +23,12 @@ describe(`Tabs Component`, () => {
     ReactDOM.render(<Tabs />, div);
     ReactDOM.unmountComponentAtNode(div);
   })
+  //snapshot of tabs
   it('renders empty given no tabs', () => {
     const wrapper = shallow(<Tabs />)
     expect(toJson(wrapper)).toMatchSnapshot();
   })
-  //snapshot of tabs
-  it('renders the first tab by dfault', ()=> {
+  it('renders the first tab by default', ()=> {
     const wrapper = shallow(<Tabs tabs={TabsProp} />);
     expect(toJson(wrapper)).toMatchSnapshot()
   })

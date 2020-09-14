@@ -30,9 +30,11 @@ class TheDate extends React.Component {
     return (
       <>
       <div>
+       <h3>Counter Button</h3>
         <p>The current count: {this.state.count}</p>
         <button onClick={ this.handleButtonClick}>Add 1</button>
       </div>
+      <h3>The Date & Current Time: (EST)</h3>
       <div>{ this.state.datetime.toLocaleString() }</div>
       <div>
         {this.state.hello}
